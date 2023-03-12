@@ -20,7 +20,7 @@ int main(int argc, const char *const argv[]){
 	p = alphabet.begin();
 	size_t i{0};
 	while(p != alphabet.end()){
-		*p = i + 'A';
+		*p = i + 'a';
 		i++;
 		p++;
 	}
@@ -42,7 +42,7 @@ int main(int argc, const char *const argv[]){
 	
 	/*Display constents of vector by range-based for loop [DONE]*/
 	cout<<"Modified Contents: ";
-	for(const auto letter: alphabet){
+	for(const auto &letter: alphabet){
 		cout<<letter<<" ";
 	}
 	return 0;
