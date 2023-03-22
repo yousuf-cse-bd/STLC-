@@ -1,0 +1,73 @@
+/**
+ * @file MaxSizeVectors1.cpp
+ * @author Md. Yousuf Ali (yousuf.cse17@gmail.com)
+ * @brief Find max-size from severale C++ data-type using max_size() method
+ * @version 0.1
+ * @date 2023-03-22
+ * @since WednesDay; 10:37 AM
+ * @copyright Copyright (c) 2023
+ * @institute: Dept. of CSE, Varendra University, Rajshahi, Bangladesh
+ */
+#include <iostream>
+#include <iomanip>
+#include <vector>
+#pragma pack(1)
+using namespace std;
+
+void vectorSize(void){
+	vector <char> v1{};
+	cout<<"Max-Size of <char> vector: "<<v1.max_size()<<endl;
+	cout<<endl;
+	
+	vector <short> v2{};
+	cout<<"Max-Size of <short> vector: "<<v2.max_size()<<endl;
+	cout<<endl;
+	
+	vector <unsigned short> v3{};
+	cout<<"Max-Size of <unsigned short> vector: "<<v3.max_size()<<endl;
+	cout<<endl;
+	
+	vector <int> v4{};
+	cout<<"Max-Size of <int> vector: "<<v4.max_size()<<endl;
+	cout<<endl;
+	
+	vector <unsigned int> v5{};
+	cout<<"Max-Size of <unsigned int> vector: "<<v5.max_size()<<endl;
+	cout<<endl;
+	
+	vector <float> v6{};
+	cout<<"Max-Size of <float> vector: "<<v6.max_size()<<endl;
+	cout<<endl;
+	
+	vector <double> v7{};
+	cout<<"Max-Size of <double> vector: "<<v7.max_size()<<endl;
+	cout<<endl;
+	
+	vector <long double> v8{};
+	cout<<"Max-Size of <long double> vector: "<<v8.max_size()<<endl;
+	cout<<endl;
+	
+	vector <size_t> v9{};
+	cout<<"Max-Size of <size_t> vector: "<<v9.max_size()<<endl;
+	cout<<endl;
+	
+	vector <ssize_t> v10{};
+	cout<<"Max-Size of <ssize_t> vector: "<<v10.max_size()<<endl;
+	cout<<endl;
+	
+	vector <string> v11{};
+	cout<<"Max-Size of <string> vector: "<<v11.max_size()<<endl;
+	cout<<endl;
+	
+	vector <string_view> v12{};
+	cout<<"Max-Size of <string_view> vector: "<<v12.max_size()<<endl;
+	cout<<endl;
+}
+
+
+int main(int argc, const char *const argv[]){
+	
+	vectorSize();
+	cout<<setw(35)<<"HappyEnding!!!"<<endl;
+	return 0;
+}
